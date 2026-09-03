@@ -21,7 +21,7 @@ const pool=new Pool({
     ssl:{rejectUnauthorized:false},
     max:20,
     idleTimeoutMillis:30000,
-    connectionTimeoutMillis:10000
+    connectionTimeoutMillis:2000
 });
 pool.on('connect',()=> console.log('[INFO] Database connected'));
 pool.on('error',(err)=>{
