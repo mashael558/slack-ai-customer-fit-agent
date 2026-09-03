@@ -1,7 +1,7 @@
 services:
   - type: web
     name: slack-ai-customer-fit-agent
-    env: node
+    runtime: node
     plan: free
     buildCommand: npm install
     startCommand: npm start
